@@ -32,5 +32,29 @@ As in all financial models, there is some notation involved within the model.
  \item[] N = normal cumulative distribution
 \end{itemize}
 
+\newpage 
 
+\section{Black-Scholes Equation}
+The Black-Scholes equation describes the price of an option over time
+
+\begin{equation}
+    \huge
+    \frac{\partial \mathrm C}{\partial \mathrm t}
+    +
+    \frac{1}{2}\sigma^{2}S^{2}
+    \frac{\partial^{2} \mathrm C}{\partial \mathrm C^{2}}
+    +
+    rS\frac{\partial \mathrm C}{\partial \mathrm S}
+    =
+    rC
+    \label{eq:(1)}
+\end{equation}
+
+Note that equation \ref{eq:(1)} is a partial differential equation. The solution to this equation gives us the Black-Scholes formula.
+
+\section{Black-Scholes formula for European option price}
+
+\subsection{Difference between European and American options markets}
+
+\quad The primary difference, and the one that affects the Black-Scholes model, is the date when an option is able to be exercised. In American markets, options can be exercised anytime before they expire, whereas European options can only be exercised on the expiration date.
 \end{document}
